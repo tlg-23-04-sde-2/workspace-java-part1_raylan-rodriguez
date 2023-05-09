@@ -20,6 +20,7 @@ public class SalariedEmployee extends Employee {
     }
 
     //business methods or actions methods
+    @Override
     public void pay() {
         System.out.println(getName() + " is paid salary " + getSalary());
     }
