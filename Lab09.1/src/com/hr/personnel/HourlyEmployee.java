@@ -35,6 +35,12 @@ public class HourlyEmployee extends Employee {
                 ((getRate()*getHours()) * HOURLY_TAX_RATE ));
     }
 
+    @Override
+    public double getStandardDeduction() {
+        double deduction = 9_000.0;
+        return deduction;
+    }
+
     // accessor methods
     public double getRate() {
         return rate;
